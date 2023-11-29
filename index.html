@@ -31,7 +31,7 @@
     <script>
 
         // console.log(x);
-        async function todo(){
+        async function  fetchDateTime(){
  try{
     x=document.getElementById("selt").value
 const data1= await fetch(`https://worldtimeapi.org/api/timezone/${x}`)
@@ -42,7 +42,7 @@ alert(error)
 console.error(error);
 }
 }
-async function serach() {
+async function  fetchDateTime() {
 let post=await todo()
 console.log(post);
 timezone.innerHTML= " " + post.datetime + " " + post.abbreviation
